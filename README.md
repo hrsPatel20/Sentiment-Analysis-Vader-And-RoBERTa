@@ -23,6 +23,8 @@ Sentiment analysis is a common natural language processing task that involves cl
 
 The dataset used in this project contains mobile reviews collected from various sources. Each review is labeled with a sentiment score or category. The dataset is preprocessed to remove noise and prepare it for model input.
 
+
+
 ## Models
 
 ### VADER
@@ -43,5 +45,41 @@ RoBERTa is a transformer-based model optimized for a variety of NLP tasks. It is
 
 ### Installation
 
-```bash
-pip install transformers vaderSentiment pandas numpy matplotlib
+    ```
+    pip install transformers vaderSentiment pandas numpy matplotlib
+
+
+## Results
+The comparison between the VADER and RoBERTa models is detailed in the notebook. The evaluation metrics include accuracy, precision, recall, and F1 score. The results show how each model performs on the dataset of mobile reviews.
+
+VADER: Provides quick results and is effective for shorter texts.
+RoBERTa: Offers a deeper understanding of the text, capturing nuances that VADER might miss.
+
+## Conclusion
+This project highlights the strengths and weaknesses of both VADER and RoBERTa in the context of sentiment analysis on mobile reviews. While VADER is faster and works well with shorter texts, RoBERTa provides a more detailed analysis at the cost of increased computational complexity.
+
+## How to Run
+1. Clone this repository:
+   ```
+   git clone https://github.com/yourusername/sentiment-analysis-mobile-reviews.git
+
+2. Navigate to the project directory:
+
+   ```
+   cd sentiment-analysis-mobile-reviews
+
+3. Open the Jupyter Notebook:
+
+   ```
+   jupyter notebook Sentiment_Analysis.ipynb
+
+4. Run all cells in the notebook to perform the analysis.
+
+
+   
+   
+
+   
+
+
+
